@@ -44,7 +44,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     response_detect = request_detect.json()
     detected_language = response_detect[0]["language"]
 
-    #print(response_detect)
-    #print(detected_language)
-
     return func.HttpResponse(detected_language)
